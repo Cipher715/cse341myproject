@@ -1,0 +1,25 @@
+{
+  "name": "cse341myproject",
+  "version": "1.0.0",
+  "description": "CSE 341 Personal Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cipher715/cse341myproject.git"
+  },
+  "author": "Atsushi Karino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cipher715/cse341myproject/issues"
+  },
+  "homepage": "https://github.com/Cipher715/cse341myproject#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  }
+}
