@@ -19,8 +19,8 @@ const getSingle = async (req, res) => {
     if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Invalid id entered. Check your contact id to find a contact.');
     }
-    const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
+    const contactId = new ObjectId(req.params.id);
+    const result = await mongodb.getDb().db().collection('contacts').find({ _id: contactId });
     result.toArray().then((contacts,err) => {
         if (err) {
           res.status(400).json({ message: err });
