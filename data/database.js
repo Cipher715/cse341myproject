@@ -28,5 +28,5 @@ return database;
 
 module.exports = {
   initDb,
-  getDb,
+  getDb
 };
